@@ -44,7 +44,7 @@
       margin: auto;
     }
 
-    section, aside {
+    section, aside, summary {
       background: white;
       padding: 15px;
       margin: 10px;
@@ -55,6 +55,12 @@
     section {
       flex: 2;
       min-width: 300px;
+    }
+
+    summary {
+      flex: 2;
+      min-width: 300px;
+      display: block;
     }
 
     aside {
@@ -86,15 +92,16 @@
     <a id="nav-actor" href="#actor">Actors</a>
     <a id="nav-quote" href="#quote">Quotes</a>
   </nav>
+
   <main>
-    <section id="summary">
+    <summary>
       <h2>Movie Summary</h2>
       <p>
         *Inception* follows Dom Cobb, a skilled thief who steals secrets from deep within the subconscious during the dream state. 
         Cobb is offered a chance to have his criminal history erased if he can successfully perform “inception” — planting an idea into someone’s mind. 
         The film blends action, emotion, and philosophy in a visually stunning journey through layered dreams.
       </p>
-    </section>
+    </summary>
     <section id="actor">
       <h2>Main Actors</h2>
       <ul>
